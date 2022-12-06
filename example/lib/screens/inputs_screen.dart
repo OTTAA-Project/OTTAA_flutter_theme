@@ -1,5 +1,4 @@
 import 'package:example/widgets/title_widget.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:ottaa_ui_kit/widgets.dart';
 

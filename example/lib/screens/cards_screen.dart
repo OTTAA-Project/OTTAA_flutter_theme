@@ -1,6 +1,6 @@
 import 'package:example/widgets/title_widget.dart';
 import 'package:flutter/material.dart';
-import 'package:ottaa_theme/widgets.dart';
+import 'package:ottaa_ui_kit/widgets.dart';
 
 class CardsScreen extends StatelessWidget {
   const CardsScreen({super.key});
