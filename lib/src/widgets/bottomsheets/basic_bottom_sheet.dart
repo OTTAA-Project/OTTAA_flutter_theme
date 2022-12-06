@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:ottaa_theme/src/theme/ottaa_colors.dart';
-import 'package:ottaa_theme/widgets.dart';
+import 'package:ottaa_ui_kit/theme.dart';
+import 'package:ottaa_ui_kit/widgets.dart';
 
 class BasicBottomSheet<T> extends StatelessWidget {
   final String? title;
@@ -45,10 +45,17 @@ class BasicBottomSheet<T> extends StatelessWidget {
 
     final size = MediaQuery.of(context).size;
 
+    double minWidth = size.width * 0.88;
+
+    if(minWidth > 1000){
+      minWidth /= 2;
+    }
+
     return showModalBottomSheet<T>(
       context: context,
       constraints: BoxConstraints(
-        maxWidth: size.width * 0.88,
+        minWidth: size.width / 3,
+        maxWidth: minWidth,
       ),
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.vertical(top: Radius.circular(16)),

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ottaa_theme/src/widgets/button/base_button.dart';
+import 'package:ottaa_ui_kit/widgets.dart';
 
 class PrimaryButton extends StatelessWidget {
   final VoidCallback? onPressed;
@@ -25,6 +25,8 @@ class PrimaryButton extends StatelessWidget {
       trailing: trailing,
       leading: leading,
       style: ElevatedButton.styleFrom(
+        elevation: 0,
+        shadowColor: Colors.transparent,
         minimumSize: const Size(double.infinity, 48),
         shape: const RoundedRectangleBorder(
           borderRadius: BorderRadius.all(Radius.circular(16)),

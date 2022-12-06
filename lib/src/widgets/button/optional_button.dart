@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ottaa_theme/theme.dart';
+import 'package:ottaa_ui_kit/theme.dart';
 
 class OptionalButton extends StatelessWidget {
   final VoidCallback? onPressed;

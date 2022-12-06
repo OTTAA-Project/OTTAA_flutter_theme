@@ -8,9 +8,11 @@ const int kDarkGray = 0xFFb5b6b8;
 const int kLightGray = 0xFFEAEAEA;
 const int kBlack = 0xFF282828;
 const int kWhite = 0xFFFFFFFF;
-const int kRed = 0xFF000000;
+const int kRed = 0xFFFF0000;
 
 const int kGray = 0xffEEEEEE;
+
+const int kCard = 0xFFFBFBFB;
 
 const Color kPrimaryColor = Color(kOrange);
 const Color kPrimaryLightColor = Color(0xFFff9b3f);
@@ -35,6 +37,8 @@ const Color kWhiteColor = Color(kWhite);
 const Color kRedColor = Color(kRed);
 
 const Color kErrorColor = Color(kRed);
+
+const Color kCardBackgroundColor = Color(kCard);
 
 const MaterialColor kPrimarySwatchColor = MaterialColor(
   kOrange,

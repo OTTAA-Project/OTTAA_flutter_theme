@@ -4,7 +4,6 @@ class BaseButton extends StatelessWidget {
   final VoidCallback? onPressed;
   final String? text;
   final Widget? child;
-  final bool? enabled;
   final Widget? leading;
   final Widget? trailing;
   final ButtonStyle style;
@@ -15,7 +14,6 @@ class BaseButton extends StatelessWidget {
     required this.style,
     this.text,
     this.child,
-    this.enabled = true,
     this.leading,
     this.trailing,
   }) : assert(text != null || child != null, 'text or child must be provided');

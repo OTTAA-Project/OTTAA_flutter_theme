@@ -1,5 +1,5 @@
-name: ottaa_theme
-description: A theme for OTTAA project
+name: ottaa_ui_kit
+description: A UI Kit for OTTAA Project
 version: 0.0.1
 homepage: https://ottaaproject.com
 
@@ -23,6 +23,8 @@ flutter:
       fonts:
         - asset: lib/assets/fonts/Montserrat-Regular.ttf
           weight: 400
+        - asset: lib/assets/fonts/Montserrat-Medium.ttf
+          weight: 500
         - asset: lib/assets/fonts/Montserrat-Bold.ttf
           weight: 700
         - asset: lib/assets/fonts/Montserrat-SemiBold.ttf

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:ottaa_theme/src/widgets/button/base_button.dart';
-import 'package:ottaa_theme/theme.dart';
+import 'package:ottaa_ui_kit/widgets.dart';
+import 'package:ottaa_ui_kit/theme.dart';
 
 class SecondaryButton extends StatelessWidget {
   final VoidCallback? onPressed;

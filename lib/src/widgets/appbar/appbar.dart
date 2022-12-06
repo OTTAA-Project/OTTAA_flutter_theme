@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:ottaa_ui_kit/widgets.dart';
 
 class OTTAAAppBar extends StatelessWidget implements PreferredSizeWidget {
   const OTTAAAppBar({super.key, this.title, this.leading, this.actions});
@@ -12,6 +13,10 @@ class OTTAAAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     final canPop = Navigator.of(context).canPop();
+
+    BasicBottomSheet.show(context,
+
+    );
 
     return Container(
       margin: const EdgeInsets.only(top: 46),
