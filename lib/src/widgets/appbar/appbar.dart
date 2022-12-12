@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:ottaa_ui_kit/widgets.dart';
 
 class OTTAAAppBar extends StatelessWidget implements PreferredSizeWidget {
   const OTTAAAppBar({super.key, this.title, this.leading, this.actions});
@@ -14,27 +13,29 @@ class OTTAAAppBar extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) {
     final canPop = Navigator.of(context).canPop();
 
-    BasicBottomSheet.show(context,
-
-    );
-
     return Container(
       margin: const EdgeInsets.only(top: 46),
       padding: const EdgeInsets.only(left: 24, right: 24),
-      child: Row(
+      child: Flex(
+        direction: Axis.horizontal,
         children: [
-          if (canPop && leading == null) ...[
-            IconButton(
-              icon: const Icon(Icons.arrow_back_ios),
-              onPressed: () => Navigator.of(context).pop(),
-            ),
-          ],
-          if (leading != null) leading!,
+          buildLeading(canPop, onPressed: () => Navigator.of(context).pop()),
           if (title != null) title!,
           if (actions != null) ...actions!,
         ],
       ),
     );
+  }
+
+  Widget buildLeading(bool canPop, {required VoidCallback onPressed}) {
+    if (canPop && leading == null) {
+      return IconButton(
+        icon: const Icon(Icons.arrow_back_ios),
+        onPressed: onPressed,
+      );
+    }
+
+    return leading ?? const SizedBox();
   }
 
   @override
