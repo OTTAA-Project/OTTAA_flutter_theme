@@ -19,8 +19,6 @@ class OptionalButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
-
     return ElevatedButton(
       onPressed: onPressed,
       style: ElevatedButton.styleFrom(
@@ -33,7 +31,7 @@ class OptionalButton extends StatelessWidget {
         elevation: 4,
       ),
       child: Row(
-        mainAxisAlignment: MainAxisAlignment.start,
+        mainAxisAlignment: (leading != null || trailing != null) ? MainAxisAlignment.start : MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Flexible(

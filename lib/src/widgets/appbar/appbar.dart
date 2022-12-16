@@ -29,7 +29,7 @@ class OTTAAAppBar extends StatelessWidget implements PreferredSizeWidget {
           width: preferredSize.width,
           height: preferredSize.height,
           margin: const EdgeInsets.only(top: 46),
-          padding: const EdgeInsets.symmetric(horizontal: 12),
+          padding: const EdgeInsets.symmetric(horizontal: 24),
           child: Flex(
             direction: Axis.vertical,
             children: [

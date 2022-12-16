@@ -35,7 +35,7 @@ class BaseButton extends StatelessWidget {
           ),
           Flexible(
             fit: FlexFit.tight,
-            flex: 2,
+            flex: 3,
             child: child ?? Text(text!, textAlign: TextAlign.center,),
           ),
           Flexible(
