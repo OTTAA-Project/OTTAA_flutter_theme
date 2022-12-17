@@ -26,6 +26,22 @@ class InputsScreen extends StatelessWidget {
           ),
         ),
         const SizedBox(height: 16),
+        const TitleWidget(title: 'Sized Text Input'),
+        SizedBox(
+          width: 64,
+          height: 75,
+          child: TextField(
+            expands: true,
+            minLines: null,
+            maxLines: null,
+            decoration: InputDecoration(
+              labelText: 'Label',
+              hintText: 'Hint',
+            ),
+          ),
+        ),
+        const SizedBox(height: 16),
+        const SizedBox(height: 16),
         const TitleWidget(title: 'Dropdown'),
         OTTAADropdown<String>(
           items: const ['Item 1', 'Item 2', 'Item 3'],

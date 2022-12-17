@@ -22,6 +22,21 @@ class ModalsScreen extends StatelessWidget {
           ),
           text: 'Open',
         ),
+        const TitleWidget(title: 'Show Primary notification'),
+        PrimaryButton(
+          onPressed: () => OTTAANotification.primary(context, text: "Primary Notification"),
+          text: 'Open',
+        ),
+        const TitleWidget(title: 'Show Secondary notification'),
+        PrimaryButton(
+          onPressed: () => OTTAANotification.secondary(context, text: "Secondary Notification"),
+          text: 'Open',
+        ),
+        const TitleWidget(title: 'Show Optional notification'),
+        PrimaryButton(
+          onPressed: () => OTTAANotification.optional(context, text: "Optional Notification"),
+          text: 'Open',
+        ),
       ],
     );
   }

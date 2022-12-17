@@ -1,4 +1,3 @@
-
 import 'package:example/screens/home.dart';
 import 'package:flutter/material.dart';
 import 'package:ottaa_ui_kit/theme.dart';

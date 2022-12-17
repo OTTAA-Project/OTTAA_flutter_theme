@@ -12,4 +12,5 @@ export 'src/widgets/cards/action_card.dart';
 export 'src/widgets/switch/switch.dart';
 export 'src/widgets/cards/profile_card.dart';
 export 'src/widgets/cards/pictogram_card.dart';
+export 'src/widgets/notifications/notification.dart';
 export 'widgets.dart';
