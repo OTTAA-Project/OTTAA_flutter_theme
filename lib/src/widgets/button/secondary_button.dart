@@ -5,7 +5,7 @@ import 'package:ottaa_ui_kit/theme.dart';
 class SecondaryButton extends StatelessWidget {
   final VoidCallback? onPressed;
   final String text;
-  final bool? enabled;
+  final bool enabled;
   final Widget? leading;
   final Widget? trailing;
 
@@ -23,7 +23,7 @@ class SecondaryButton extends StatelessWidget {
     final colorScheme = Theme.of(context).colorScheme;
 
     return BaseButton(
-      onPressed: onPressed,
+      onPressed: enabled ? onPressed : null,
       text: text,
       trailing: trailing,
       leading: leading,

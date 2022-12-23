@@ -4,7 +4,7 @@ import 'package:ottaa_ui_kit/widgets.dart';
 class PrimaryButton extends StatelessWidget {
   final VoidCallback? onPressed;
   final String text;
-  final bool? enabled;
+  final bool enabled;
   final Widget? leading;
   final Widget? trailing;
 
@@ -20,7 +20,7 @@ class PrimaryButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BaseButton(
-      onPressed: onPressed,
+      onPressed: enabled ? onPressed : null,
       text: text,
       trailing: trailing,
       leading: leading,

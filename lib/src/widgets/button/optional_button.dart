@@ -4,7 +4,7 @@ import 'package:ottaa_ui_kit/theme.dart';
 class OptionalButton extends StatelessWidget {
   final VoidCallback? onPressed;
   final String text;
-  final bool? enabled;
+  final bool enabled;
   final Widget? leading;
   final Widget? trailing;
 
@@ -20,7 +20,7 @@ class OptionalButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ElevatedButton(
-      onPressed: onPressed,
+      onPressed: enabled ? onPressed : null,
       style: ElevatedButton.styleFrom(
         fixedSize: const Size(double.infinity, 48),
         shape: RoundedRectangleBorder(
