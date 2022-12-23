@@ -28,7 +28,8 @@ class OptionalButton extends StatelessWidget {
         ),
         backgroundColor: Colors.white,
         foregroundColor: kPrimaryTextColor,
-        elevation: 4,
+        elevation: 0,
+        shadowColor: Colors.transparent,
       ),
       child: Row(
         mainAxisAlignment: (leading != null || trailing != null) ? MainAxisAlignment.start : MainAxisAlignment.center,
