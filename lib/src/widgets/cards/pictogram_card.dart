@@ -45,6 +45,7 @@ class PictogramCard extends StatelessWidget {
                 image: pictogram,
                 height: 96,
                 fit: BoxFit.fitHeight,
+                opacity: AlwaysStoppedAnimation(status != null && !status! ? 0.5 : 1),
               ),
             ),
             Expanded(
