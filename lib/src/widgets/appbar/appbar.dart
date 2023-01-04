@@ -39,8 +39,8 @@ class OTTAAAppBar extends StatelessWidget implements PreferredSizeWidget {
                   children: [
                     if (leading != null) leading,
                     if (title != null)
-                      Flexible(
-                        fit: FlexFit.loose,
+                      Expanded(
+                        flex: 2,
                         child: title!,
                       ),
                     if (actions != null)
