@@ -1,6 +1,6 @@
 name: ottaa_ui_kit
 description: A UI Kit for OTTAA Project
-version: 0.0.11
+version: 0.0.12
 homepage: https://ottaaproject.com
 
 environment:
@@ -8,6 +8,7 @@ environment:
   flutter: ">=1.17.0"
 
 dependencies:
+  auto_size_text: ^3.0.0
   flutter:
     sdk: flutter
 

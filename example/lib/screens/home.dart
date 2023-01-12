@@ -1,3 +1,4 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:example/screens/modals_screen.dart';
 import 'package:example/screens/buttons_screen.dart';
 import 'package:example/screens/cards_screen.dart';
@@ -26,17 +27,23 @@ class _HomeScreenState extends State<HomeScreen> with TickerProviderStateMixin {
             onPressed: () {},
             splashRadius: 24,
           ),
-          actions: [
-            TextButton(
-              onPressed: () {},
-              child: Text("Next"),
-              style: TextButton.styleFrom(
-                backgroundColor: Colors.transparent,
-                splashFactory: NoSplash.splashFactory,
-                enableFeedback: false,
-                foregroundColor: Colors.grey,
+          title: Row(
+            children: [
+              const AutoSizeText(
+                "Texto predicitvo",
+                minFontSize: 4,
+                maxLines: 1,
+                overflow: TextOverflow.ellipsis,
+                style: TextStyle(fontSize: 13),
               ),
-            ),
+              const SizedBox(width: 4),
+              GestureDetector(
+                onTap: () {},
+                child: const Icon(Icons.info_outline, size: 18),
+              )
+            ],
+          ),
+          actions: [
             TextButton(
               onPressed: () {},
               child: Text("Next"),

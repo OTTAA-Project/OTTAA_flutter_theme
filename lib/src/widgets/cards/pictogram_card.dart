@@ -1,3 +1,4 @@
+import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:ottaa_ui_kit/widgets.dart';
 
@@ -59,19 +60,28 @@ class PictogramCard extends StatelessWidget {
                   children: [
                     Flexible(
                       fit: FlexFit.loose,
-                      child: Row(
+                      child: Flex(
+                        direction: Axis.horizontal,
                         mainAxisAlignment: MainAxisAlignment.end,
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
-                          Text(
-                            title,
-                            style: textTheme.bodyText2,
+                          Expanded(
+                            child: AutoSizeText(
+                              title,
+                              softWrap: true,
+                              style: textTheme.bodyText2,
+                              maxLines: 2,
+                              minFontSize: 8,
+                              textAlign: TextAlign.end,
+                            ),
                           ),
-                          if (status != null)
+                          if (status != null) ...[
+                            const SizedBox(width: 8),
                             OTTAASwitch(
                               value: status!,
                               onChanged: onChange,
                             ),
+                          ],
                         ],
                       ),
                     ),

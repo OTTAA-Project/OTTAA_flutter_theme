@@ -87,7 +87,7 @@ class CardsScreen extends StatelessWidget {
         const SizedBox(height: 16),
         const TitleWidget(title: 'Pictogram Card w/ Switch'),
         PictogramCard(
-          title: 'Acciones',
+          title: 'LIBRO DEL RESTAURANTE',
           actionText: 'Ver Pictogramas',
           pictogram: const NetworkImage(
             'https://media.discordapp.net/attachments/1022491179041968148/1049659463424020570/image.png',
