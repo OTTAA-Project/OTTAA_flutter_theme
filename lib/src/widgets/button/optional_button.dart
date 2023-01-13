@@ -30,6 +30,7 @@ class OptionalButton extends StatelessWidget {
         foregroundColor: kPrimaryTextColor,
         elevation: 0,
         shadowColor: Colors.transparent,
+        padding: const EdgeInsets.symmetric(horizontal: 8),
       ),
       child: Row(
         mainAxisAlignment: (leading != null || trailing != null) ? MainAxisAlignment.start : MainAxisAlignment.center,

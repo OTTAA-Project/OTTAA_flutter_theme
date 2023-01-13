@@ -54,6 +54,7 @@ class SecondaryButton extends StatelessWidget {
           }
           return colorScheme.primary;
         }),
+        padding: MaterialStateProperty.all(const EdgeInsets.symmetric(horizontal: 8)),
         overlayColor: MaterialStateProperty.all(colorScheme.primary.withOpacity(0.2)),
       ),
     );
